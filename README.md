@@ -27,3 +27,28 @@ the annotated input contracts, without runtime element-type validation.
 
 Package source lives in src/dsa_challenges; tests live in tests/. Python lists
 serve as array-like random-access sequences; these are not fixed-size C arrays.
+
+## Day 8: arrays and two pointers
+
+[Worked exercises](08_arrays_two_pointers/README.md) explain all four algorithms,
+loop invariants and edge cases. [Problem index](docs/problem-index.md) tracks topics.
+
+```powershell
+.venv\Scripts\python.exe 08_arrays_two_pointers/examples.py
+```
+
+```text
+Reversed: [4, 3, 2, 1]
+Zeros moved: [1, 3, 12, 0, 0]
+Pair indices: (0, 4)
+Sorted squares: [0, 1, 9, 16, 100]
+```
+
+pair_sum_sorted returns distinct zero-based indices or None; sorted_squares returns
+a new list. Both reject unsorted input and run in O(n), including validation.
+Pair search uses O(1) extra space; squares needs O(n) result space. Arithmetic costs
+for large integers and nonconstant indexing may change these simple bounds.
+
+36 tests include exhaustive small-input comparisons with independent reference
+solutions. CI runs tests, lint, formatting and the example on Python 3.12.
+See [ROADMAP.md](ROADMAP.md) and [PROGRESS.md](PROGRESS.md) for actual work and next steps.
