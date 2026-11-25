@@ -49,6 +49,18 @@ a new list. Both reject unsorted input and run in O(n), including validation.
 Pair search uses O(1) extra space; squares needs O(n) result space. Arithmetic costs
 for large integers and nonconstant indexing may change these simple bounds.
 
-36 tests include exhaustive small-input comparisons with independent reference
-solutions. CI runs tests, lint, formatting and the example on Python 3.12.
+68 tests include exhaustive small-input comparisons with independent reference
+solutions. CI runs tests, lint, formatting and both examples on Python 3.12.
 See [ROADMAP.md](ROADMAP.md) and [PROGRESS.md](PROGRESS.md) for actual work and next steps.
+
+## Day 9: hash maps and frequency counting
+
+[Worked exercises](09_hash_maps_frequencies/README.md) explain unsorted pair lookup,
+first-unique indices and stable multiset intersection, including tie rules,
+collision behaviour and expected versus worst-case complexity.
+
+```powershell
+.venv\Scripts\python.exe 09_hash_maps_frequencies/examples.py
+```
+
+Expected output: pair indices (1, 3), unique index 1, intersection [2, 1, 2].

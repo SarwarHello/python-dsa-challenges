@@ -4,7 +4,7 @@ Follow the user's authoritative roadmap: Day 8 arrays/two pointers, Day 9 hash
 maps/frequency counting, Day 10 binary search, Day 11 sorting/recursion, Day 12
 stacks/queues, Day 13 linked lists/binary trees, Day 14 BFS/DFS.
 
-Day 8 is authorized under the established implementation/test/commit/push workflow.
+Days 8 and 9 are authorized under the established implementation/test/commit/push workflow.
 Work here at E:\python-dsa-challenges; publish only to the owned repository
 SarwarHello/python-dsa-challenges. Later days need user instruction.
 
